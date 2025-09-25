@@ -39,11 +39,80 @@ El laboratorio demuestra el uso de la arquitectura **MVC (Model — View — Con
    cd TUREPO
 
 2. Instalar las dependencias de PHP y node.js
+ ```bash
+  composer install
+  npm install
 
-- composer install
-- npm install
+3. Configurar el archivo .enp
+ ```bash
+  cp .env.example .env
 
+ Generar la clave de aplicación
+ ```bash
+  php artisan key:generate
 
+ Configurar las variables de conexión a Bases de datos
+ ```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=lab_login
+DB_USERNAME=root
+DB_PASSWORD=tu_password
+
+4. Ejecutar migraciones
+ ```bash
+  php artisan migrate
+
+5. Compilar assets
+ ```bash
+  npm run dev
+
+6. Levantar Servidor local
+ ```bash
+  php artisan serve
+
+**## 4. Comandos usados para autenticación**
+Opción A: Laravel Breeze (recomendado, moderno con Tailwind)
+```bash
+ composer require laravel/breeze --dev
+php artisan breeze:install
+npm install && npm run dev
+php artisan migrate
+
+Opción B: Laravel UI (clásico con Bootstrap)
+```bash
+ composer require laravel/ui
+php artisan ui bootstrap --auth
+npm install && npm run dev
+php artisan migrate
+
+**## 5. Bases de Datos y Respaldos**
+- Motor: MySQL
+- Nombre de la BD: lablaravellogin7
+
+Para generar el respaldo:
+```bash
+ 
+**## 6. Estructura del Repositorio**
+```bash
+ /app
+/bootstrap
+/config
+/database
+  /backups
+/public
+/resources
+  /views
+  /screenshots
+/routes
+README.md
+
+**## 7. Evidencias de Capturas**
+Las capturas se encuentran enn la carpeta \screenshots
+- Login
+- Registro
+- Home
 
 ## License
 
