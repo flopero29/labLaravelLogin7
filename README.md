@@ -18,7 +18,7 @@
 
 ## 1. Descripción del proyecto
 Este repositorio contiene la implementación del módulo de autenticación (login/registro) en Laravel.  
-El laboratorio demuestra el uso de la arquitectura **MVC (Model — View — Controller)**, la configuración de entornos locales y la integración de un kit de autenticación.  
+El laboratorio demuestra el uso de la arquitectura **MVC (Modelo — Vista — Controlador)**, la configuración de entornos locales y la integración de un kit de autenticación.  
 
 ---
 
@@ -38,12 +38,12 @@ El laboratorio demuestra el uso de la arquitectura **MVC (Model — View — Con
    git clone https://github.com/TUUSUARIO/TUREPO.git
    cd TUREPO
 
-2. Instalar las dependencias de PHP y node.js
+2. Instalar las dependencias de PHP y node.js:
  ```bash
   composer install
   npm install
 
-3. Configurar el archivo .enp
+3. Configurar el archivo .enp:
  ```bash
   cp .env.example .env
 
