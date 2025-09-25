@@ -34,24 +34,27 @@ El laboratorio demuestra el uso de la arquitectura **MVC (Modelo — Vista — C
 
 ## 3. Instalación y configuración
 1. Clonar repositorio:
-   ```bash
+ ```bash
    git clone https://github.com/TUUSUARIO/TUREPO.git
    cd TUREPO
+```
 
 2. Instalar las dependencias de PHP y node.js:
  ```bash
   composer install
   npm install
+```
 
 3. Configurar el archivo .enp:
  ```bash
   cp .env.example .env
+```
 
- Generar la clave de aplicación
+ 3.1 Generar la clave de aplicación:
  ```bash
   php artisan key:generate
-
- Configurar las variables de conexión a Bases de datos
+```
+ 3.2 Configurar las variables de conexión a Bases de datos:
  ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -59,42 +62,46 @@ DB_PORT=3306
 DB_DATABASE=lab_login
 DB_USERNAME=root
 DB_PASSWORD=tu_password
-
+```
 4. Ejecutar migraciones
  ```bash
   php artisan migrate
-
+```
 5. Compilar assets
  ```bash
   npm run dev
-
+```
 6. Levantar Servidor local
  ```bash
   php artisan serve
-
-**## 4. Comandos usados para autenticación**
-Opción A: Laravel Breeze (recomendado, moderno con Tailwind)
+# Abrir en el navegador http://127.0.0.1:8000
+```
+---
+## 4. Comandos usados para autenticación
+- Opción A: Laravel Breeze (recomendado, moderno con Tailwind)
 ```bash
  composer require laravel/breeze --dev
 php artisan breeze:install
 npm install && npm run dev
 php artisan migrate
-
-Opción B: Laravel UI (clásico con Bootstrap)
+```
+- Opción B: Laravel UI (clásico con Bootstrap)
 ```bash
  composer require laravel/ui
 php artisan ui bootstrap --auth
 npm install && npm run dev
 php artisan migrate
-
-**## 5. Bases de Datos y Respaldos**
+```
+---
+## 5. Bases de Datos y Respaldos
 - Motor: MySQL
 - Nombre de la BD: lablaravellogin7
 
 Para generar el respaldo:
 ```bash
- 
-**## 6. Estructura del Repositorio**
+ ```
+---
+## 6. Estructura del Repositorio
 ```bash
  /app
 /bootstrap
@@ -107,12 +114,24 @@ Para generar el respaldo:
   /screenshots
 /routes
 README.md
-
-**## 7. Evidencias de Capturas**
+```
+---
+## 7. Evidencias de Capturas
 Las capturas se encuentran enn la carpeta \screenshots
 - Login
 - Registro
 - Home
+---
+## 8. Dificultades encontradas y Soluciones
+- Error SQLSTATE[HY000] [1045]: acceso denegado
+Solución: verificar usuario/contraseña en .env y reiniciar MySQL.
+
+- php artisan migrate falla por tablas existentes  Solución: ejecutar php artisan migrate:fresh.
+
+- npm run dev falla  Solución: borrar node_modules y package-lock.json, luego correr npm install.
+
+- No aparecen vistas de login  Solución: instalar correctamente Breeze o Laravel UI según versión de Laravel.
+---
 
 ## License
 
