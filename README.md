@@ -99,7 +99,13 @@ php artisan migrate
 
 Para generar el respaldo:
 ```bash
+mysqldump -u root -p lab_login > database/backups/backup_lab_login.sql
  ```
+El archivo resultante se guarda en la carpeta:
+```bash
+/database/backups/backup_lab_login.sql
+
+```
 ---
 ## 6. Estructura del Repositorio
 ```bash
