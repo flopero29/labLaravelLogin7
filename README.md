@@ -99,11 +99,11 @@ php artisan migrate
 
 Para generar el respaldo:
 ```bash
-mysqldump -u root -p lab_login > database/backups/backup_lab_login.sql
+& "C:\wamp64\bin\mysql\mysql9.1.0\bin\mysqldump.exe" -u root -p lablaravellogin7 > "C:\wamp64\backups\backup_lablaravellogin7.sql"
  ```
 El archivo resultante se guarda en la carpeta:
 ```bash
-/database/backups/backup_lab_login.sql
+/database/backups/backup_lablaravellogin7.sql
 
 ```
 ---
