@@ -123,16 +123,31 @@ Las capturas se encuentran enn la carpeta \screenshots
 - Home
 ---
 ## 8. Dificultades encontradas y Soluciones
-- Error SQLSTATE[HY000] [1045]: acceso denegado
-Solución: verificar usuario/contraseña en .env y reiniciar MySQL.
+- **No instalación de node.js y npm**
+- Solución: Descargar e instalar los archivos necesarios y enrutarlos en las variables de 
+entorno.
 
-- php artisan migrate falla por tablas existentes  Solución: ejecutar php artisan migrate:fresh.
+- **Tabla ya existente en base de datos MySQL al usar el comando php artisan 
+migrate**
+- Solución: ejecutar php artisan migrate:fresh.
 
-- npm run dev falla  Solución: borrar node_modules y package-lock.json, luego correr npm install.
+- **Problemas con la seguridad en Powershell**
+- Solución: Al correr los comandos en powershell pueden no funcionar y mostrar un error, 
+por lo cual puede utilizarse el cmd de la computadora para proseguir instalando.
 
-- No aparecen vistas de login  Solución: instalar correctamente Breeze o Laravel UI según versión de Laravel.
+- **No aparecen vistas de login**
+- Solución: instalar correctamente Breeze o Laravel UI según versión de Laravel.
 ---
+## 9. Referencias
+- Instrucciones del laboratorio (documento entregado por la docente).
+- Laravel - the PHP framework for web artisans. (n.d.). Retrieved September 26, 2025, from Laravel.com website: https://laravel.com/
+- MySQLdump y su poder ¿Qué es y cómo usarlo? [Web log post]. (2024, October 24). Retrieved September 26, 2025, from NebulaCloud.es - Blog - Hosting, Cloud VPS, Dedicados website: https://nebulacloud.es/blog/como-hacer-un-dump-en-mysql-mysqldump/
 
+---
+Nombre: Jose Bustamante
+Correo: jose.bustamante2@gmail.com
+Curso: Ingeniería Web
+Instructor del Laboratorio: Ing. Irina Fong
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
