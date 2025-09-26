@@ -144,10 +144,21 @@ por lo cual puede utilizarse el cmd de la computadora para proseguir instalando.
 - MySQLdump y su poder ¿Qué es y cómo usarlo? [Web log post]. (2024, October 24). Retrieved September 26, 2025, from NebulaCloud.es - Blog - Hosting, Cloud VPS, Dedicados website: https://nebulacloud.es/blog/como-hacer-un-dump-en-mysql-mysqldump/
 
 ---
-Nombre: Jose Bustamante
-Correo: jose.bustamante2@gmail.com
-Curso: Ingeniería Web
-Instructor del Laboratorio: Ing. Irina Fong
+<br>
+<p align="center">
+    Desarrollado por el estudiante de la Universidad Tecnológica de Panamá:
+<br>
+Nombre: Jose Bustamante 8-1011-1717
+<br>
+Correo: jose.bustamante2@utp.ac.pa
+<br>
+Curso: Ingeniería Web - Unidad I: MVC
+<br>
+Instructor del Laboratorio: Ing. Irina Fong.
+<br><br>
+</p>
+
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
